@@ -16,9 +16,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 20px;
 }
 
-button {
+button.one {
     width: 200px;
     height: 75px;
     border: none;
@@ -33,9 +35,29 @@ button {
     z-index: 1;
 }
 
-button:active {
+button.one:active {
     background-color: rgb(10,10,10);
     color: rgb(220,220,220);
+}
+
+button.two {
+    width: 200px;
+    height: 75px;
+    border: none;
+    border-radius: 2px;
+    font-family: 'Helvetica', 'sans-serif';
+    font-weight: 900;
+    font-size: 34px;
+    text-shadow: 0 0 3px rgba(255,255,255,1);
+    background-color: rgb(10,10,10);
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+button.two:active {
+    color: lightgray;
+    background-color: darkred;
 }
 
 .border {
